@@ -4,6 +4,7 @@
     </div>
   </template>
 
+
   <style scoped>
   .hero-image {
     height: 400px;

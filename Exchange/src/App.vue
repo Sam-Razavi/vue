@@ -1,5 +1,5 @@
 <script setup>
-import exchange from './components/exchange.vue'
+import exchange from './components/ExchangeApp.vue'
 import navbar from './components/navbar.vue'
 </script>
 
