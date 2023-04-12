@@ -1,17 +1,27 @@
 <template>
     <div class="hero-image">
-      <img :src="('../assets/img/hero.jpeg')" alt="" />
+      <img :src="imageSrc" alt="exchange money" />
     </div>
   </template>
 
+<script>
+export default {
+  data() {
+    return {
+        imageSrc: ('/src/assets/img/hero.jpeg'),
+    };
+  },
+};
+</script>
 
   <style scoped>
   .hero-image {
-    height: 400px;
-    background-color: #eee;
-    background-image: url('../assets/img/hero.jpeg');
-    background-size: cover;
-    background-position: center;
-    position:bottom  ;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
   </style>
